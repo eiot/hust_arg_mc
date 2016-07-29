@@ -11,5 +11,4 @@ ENV XAPPLRESDIR=/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/X11/app-defaults
 ENV MCR_CACHE_VERBOSE=true
 ENV MCR_CACHE_ROOT=/tmp
 
-ADD main_tan /mnt/
-ADD input /mnt/
+ADD PETSeg_tan /mnt/
