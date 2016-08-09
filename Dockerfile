@@ -1,3 +1,6 @@
 from eiot/matlab2014b-compiler-runtime-docker:latest
 
-ADD PETSeg_tan /mnt/
+COPY main_tan /bin/
+COPY phantom_PET.nii /bin/
+RUM chmod 777 /bin/main_tan
+

@@ -1,0 +1,29 @@
+{
+  "name": "hust_arg_mc",
+  "tool-version": "1.0",
+  "description": "PETSEG pipeline submitted by Huang Xu for Tan Shan",
+  "command-line": "HOME=/tmp; main_tan [PET_IMAGE] .",
+  "docker-image": "eiot/hust_arg_mc",
+  "docker-index": "http://index.docker.io",
+  "schema-version": "0.2",
+  "inputs": [
+    {
+      "id": "pet_image",
+      "name": "Image path",
+      "type": "File",
+      "description": "The input image path",
+      "command-line-key": "[PET_IMAGE]",
+      "list": false,
+      "optional": false,
+      "command-line-flag": "-i"
+    }
+  ],
+  "output-files": [
+    {
+            "id": "segmentation_result_challenge",
+            "name": "Segmented image",
+            "description": "The segmented image",
+            "path-template": "SegmentResult_[PET_IMAGE]"
+    }
+  ]
+} 
