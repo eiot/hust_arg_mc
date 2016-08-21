@@ -1,7 +1,7 @@
 {
   "name": "hust_arg_mc",
-  "tool-version": "1.0",
-  "description": "PETSEG pipeline submitted by Huang Xu for Tan Shan",
+  "tool-version": "1.1",
+  "description": "PETSEG pipeline submitted by Huang Xu for Tan Shan,fixed the wrong indices in MultiModalityregionGrowing (line 18)",
   "command-line": "HOME=/tmp; main_tan [PET_IMAGE] .",
   "docker-image": "eiot/hust_arg_mc",
   "docker-index": "http://index.docker.io",
